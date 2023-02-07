@@ -25,16 +25,20 @@ body {
 
 .header {
   width: 100%;
-  margin-bottom: 148px;
+  
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  
   text-transform: uppercase;
   color: #fff;
+  
   background-image: url("../images/banner-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
+  
   position: relative;
   z-index: 0;
 }
@@ -97,6 +101,7 @@ body {
 
 .logo {
   width: 270px;
+  margin: 225px 0 45px;
 }
 
 .menu {
@@ -118,7 +123,6 @@ body {
   font-weight: 700;
   font-size: 1.625rem;
   text-align: center;
-  margin: 0px;
 }
 
 .main-block {
@@ -211,10 +215,10 @@ body {
 .card__filling {
   width: 100%;
   min-width: 80%;
+
   border: 3px solid rgba(181, 159, 91, 0.6);
-  margin: 0px 13px 13px;
+  margin: 88px 13px 13px;
   padding: 33px 20px 31px;
-  vertical-align: bottom;
 }
 
 .card__filling__link {
@@ -236,7 +240,7 @@ body {
 
 .main__aside-block {
   width: 100%;
-  padding: 0px;
+  padding: 0 15px;
   margin: 0;
 }
 
@@ -264,7 +268,8 @@ body {
 }
 
 .card-tags-list {
-  display: flex;
+  diplay: flex;
+  
   margin: 0;
   padding: 0;
 }
@@ -274,7 +279,7 @@ body {
   
   text-transform: uppercase;
   
-  margin: 0px 0px 0px 0px;
+  margin: 0px 19px 0px 0px;
 }
 
 .tag-link {
@@ -323,6 +328,8 @@ body {
 .aside-block {
   width: 100%;
   margin: 0;
+  padding: 0 15px;
+
   display: flex;
   flex-direction: column;
 }
@@ -363,7 +370,7 @@ body {
 }
 
 .aside-tittle_section {
-  margin: 0 0 0 11px;
+  margin: -7px 0 0 11px;
   padding: 0;
 }
 
@@ -488,15 +495,17 @@ body {
 }
 
 .tags-list {
-  display: flex;
+  diplay: flex;
   padding: 0;
 }
 
 .tags-item {
   display: inline-block;
+  
   text-transform: uppercase;
+  
   outline: 3px solid rgb(238, 238, 238);
-  padding: 1px 0px 1px 0px;
+  padding: 1px 11px;
   margin: 6px 5px;
 }
 
@@ -520,7 +529,7 @@ body {
 }
 
 .themes-list {
-  margin: 0 0 0 0px;
+  margin: 0 0 0 4px;
   padding: 0;
 }
 
@@ -539,7 +548,7 @@ body {
   font-size: 0.875rem;
   color: #000000;
   
-  margin: 0px;
+  margin: 0 2px;
 }
 
 .themes-link:hover {
@@ -571,9 +580,12 @@ body {
 .text-price__container {
   width: 0;
   min-width: 100%;
+
   outline: 3px solid rgba(181, 159, 91, 0.6);
   outline-offset: 18px;
-  padding: 41px 0 7px;
+
+  padding: 41px 0 7px; 
+  margin-top: -15px;
 }
 
 .header-name_link {
@@ -733,11 +745,14 @@ body {
 
 .popup__close {
   position: absolute;
+
   width: 27px;
   height: 27px;
+
   background-image: url("../svg/form-x.svg");
   background-size: 27px;
   background-repeat: no-repeat;
+
   top: -32px;
   right: 1px;
 }
@@ -763,12 +778,18 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 330px;
+  height: 546px;
   padding: 0 24px;
   margin: 0 auto;
+
   font-size: 0.813rem;
+
   top: 10%;
   right: 4%;
   left: 4%;
+
+  position:fixed;
+
   background-color: #fff;
 }
 
@@ -903,6 +924,10 @@ body {
 
   .logo {
     width: 158px;
+
+    margin-top: 43px;
+
+    order: 1;
   }
 
   .about-blog {
@@ -1012,11 +1037,14 @@ body {
 
   .menu-navigation-list {
     display: flex;
+
     list-style-type: none;
+
+    margin: 28px 0 0;
   }
 
   .menu-navigation-item {
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 35px;
   }
 
   .menu-navigation_link {
@@ -1031,7 +1059,7 @@ body {
   }
 
   .about-blog {
-    margin: 128px auto;
+    margin: 128px auto 145px;
 
     width: 700px;
   }
@@ -1072,7 +1100,9 @@ body {
   }
 
   .card-text-section {
-    margin-left: 31px;
+    width: 46%;
+
+    padding-left: 31px;
   }
 
   .card-header_name {
