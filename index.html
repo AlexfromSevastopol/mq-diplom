@@ -9,34 +9,36 @@
 <body>
 <header class="header">
     <div class="head-container">
-        <div class="menu-burger__header">
-            <span></span>
+        <div class="menu__container">
+            <div class="menu-burger__header">
+                <span></span>
+            </div>
+            <a href="#0" class="logo-link">
+                <img src="svg/noemi-logo.svg" alt="Noemi" class="logo">
+            </a>
+            <nav class="menu">
+                <ul class="menu-navigation-list">
+                    <li class="menu-navigation-item">
+                        <a href="#0" class="menu-navigation_link">Главная</a>
+                    </li>
+                    <li class="menu-navigation-item">
+                        <a href="#0" class="menu-navigation_link">Посты</a>
+                    </li>
+                    <li class="menu-navigation-item">
+                        <a href="#0" class="menu-navigation_link">Статьи</a>
+                    </li>
+                    <li class="menu-navigation-item">
+                        <a href="#0" class="menu-navigation_link">Теги</a>
+                    </li>
+                    <li class="menu-navigation-item">
+                        <a href="#0" class="menu-navigation_link">Темы</a>
+                    </li>
+                    <li class="menu-navigation-item">
+                        <a href="#0" class="menu-navigation_link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-        <a href="#0" class="logo-link">
-            <img src="svg/noemi-logo.svg" alt="Noemi" class="logo">
-        </a>
-        <nav class="menu">
-            <ul class="menu-navigation-list">
-                <li class="menu-navigation-item">
-                    <a href="#0" class="menu-navigation_link">Главная</a>
-                </li>
-                <li class="menu-navigation-item">
-                    <a href="#0" class="menu-navigation_link">Посты</a>
-                </li>
-                <li class="menu-navigation-item">
-                    <a href="#0" class="menu-navigation_link">Статьи</a>
-                </li>
-                <li class="menu-navigation-item">
-                    <a href="#0" class="menu-navigation_link">Теги</a>
-                </li>
-                <li class="menu-navigation-item">
-                    <a href="#0" class="menu-navigation_link">Темы</a>
-                </li>
-                <li class="menu-navigation-item">
-                    <a href="#0" class="menu-navigation_link">Контакты</a>
-                </li>
-            </ul>
-        </nav>
         <div class="about-blog">
             <h1 class="about-blog_tittle">Блог о творчестве, спорте, и образе жизни</h1>
         </div>
@@ -320,17 +322,21 @@
                 </div>
             </section>
             <form class="search">
-                <input type="search" class="search-field" placeholder="Найти...">
-                <span class="visually-hidden">Введите текст для поиска контента на сайте</span>
-                <button class="search-button"></button>
-                <span class="visually-hidden">Нажмите для поиска</span>
+                <label>
+                    <input type="search" class="search-field" placeholder="Найти...">
+                    <span class="visually-hidden">Введите текст для поиска контента на сайте</span>
+                </label>
+                <button class="search-button" aria-label="Нажмите для поиска"></button>
+                <!-- <span class="visually-hidden">Нажмите для поиска</span> -->
             </form>
             <div class="name-aside">
                 <h3 class="name-aside_tittle">Рассылка</h3>
             </div>
             <form class="email">
-                <input type="email" class="email-field" placeholder="Ваш email-адрес" required="">
-                <span class="visually-hidden">Введите ваш действующий e-mail адрес</span>
+                <label>
+                    <input type="email" class="email-field" placeholder="Ваш email-адрес" required="">
+                    <span class="visually-hidden">Введите ваш действующий e-mail адрес</span>
+                </label>
                 <button class="email-button">Подписаться</button>
             </form>
             <div class="name-aside">
@@ -401,7 +407,7 @@
                     <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
                     <source media="(max-width: 1200px)" srcset="images/shop-item-tablet1.jpg">
                     <source media="(min-width: 1201px)" srcset="images/shop-item-desk1.jpg">
-                    <img src="images/shop-item-tablet1.jpg" alt="Мягкая розовая подушка с принтом">
+                    <img class="shop-item__image" src="images/shop-item-tablet1.jpg" alt="Мягкая розовая подушка с принтом">
                 </picture>
             </a>
             <div class="text-price__container">
@@ -432,7 +438,7 @@
                     <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
                     <source media="(max-width: 1200px)" srcset="images/shop-item-tablet2.jpg">
                     <source media="(min-width: 1201px)" srcset="images/shop-item-desk2.jpg">
-                    <img src="images/shop-item-tablet2.jpg" alt="Кукла Зайчика, одетая в голубое платье с красивыми цветами">
+                    <img class="shop-item__image" src="images/shop-item-tablet2.jpg" alt="Кукла Зайчика, одетая в голубое платье с красивыми цветами">
                 </picture>
             </a>
             <div class="text-price__container">
@@ -462,7 +468,7 @@
                     <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
                     <source media="(max-width: 1200px)" srcset="images/shop-item-tablet3.jpg">
                     <source media="(min-width: 1201px)" srcset="images/shop-item-desk3.jpg">
-                    <img src="images/shop-item-tablet3.jpg" alt="Шестиугольная деревянная рамка, с светло-белым наполнением">
+                    <img class="shop-item__image" src="images/shop-item-tablet3.jpg" alt="Шестиугольная деревянная рамка, с светло-белым наполнением">
                 </picture>
             </a>
             <div class="text-price__container">
@@ -522,7 +528,9 @@
 </footer>
 <div class="popup_hidden">
     <div class="popup__content">
-        <label class="popup__close"></label>
+        <!-- <label class="popup__close"></label> -->
+        <button class="popup__close" type="button" aria-label="Закрыть всплывающее окно">
+        </button>
         <div class="name-aside__popup">
             <h3 class="name-aside_tittle">Ваш фидбек</h3>
         </div>
